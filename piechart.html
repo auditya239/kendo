@@ -83,7 +83,7 @@
             $("#chart").kendoChart({
                 title: {
                     position: "bottom",
-                    text: "Share of Internet Population Growth, 2007 - 2012"
+                    text: "Number of Sepsis patients according to the bundles selected"
                 },
                 legend: {
                     visible: false
@@ -95,7 +95,7 @@
                     labels: {
                         visible: true,
                         background: "transparent",
-                        template: "#= category #: #= value#%"
+                        template: "#= category #: #= value#"
                     }
                 },
                 series: [{
@@ -105,7 +105,7 @@
                 }],
                 tooltip: {
                     visible: true,
-                    format: "{0}%"
+                    format: "{0}"
                 }
             });
         }
