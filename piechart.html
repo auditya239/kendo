@@ -21,8 +21,9 @@
       $('#chart').css("height",height);
       $(window).resize(function() {
   //resize just happened, pixels changed
-  var height = $( window ).height();
-      $('#chart').css("height",height);
+      var height1 = $( window ).height();
+      $('#chart').css("height",height1);
+      createChart();
    });
 
       var test = [{
