@@ -17,6 +17,8 @@
         <div id="chart" style="background: center no-repeat url('../content/shared/styles/world-map.png'); height : 330px"></div>
     </div>
     <script>
+      var height = $( window ).height();
+      $('#chart').css("height",height);
       var test = [{
                         category: "IVFs Ordered",
                         value: 15,
