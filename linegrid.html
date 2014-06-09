@@ -14,7 +14,7 @@
 <body>
     <div id="example">
     <div class="demo-section k-content">
-        <div id="chart" style="background: center no-repeat url('../content/shared/styles/world-map.png');"></div>
+        <div id="chart" style=""></div>
     </div>
     <script>
       var height = $( window ).height();
@@ -52,6 +52,10 @@
                     name: "Hypoglycemia",
                     data: [1, 2, 3, 3, 4, 3, 1, 2, 4, 2]
                 }],
+                seriesClick: function(e) {
+                    console.log (e.series.name);
+                    window.location = 'custom-call:linegrid:' + e.series.name;
+                },
                 valueAxis: {
                     labels: {
                         format: "{0}"
